@@ -7,7 +7,20 @@
 </head>
 <body>
     <h1>
-        this is the home page
+        List of Books
     </h1>
+    {% for book in books %}
+    <ul>
+        <li>
+            {{book.title}}
+        </li>
+        <li>
+            {{book.author}}
+        </li>
+        <li>
+            {{book.published_date}}
+        </li>
+    </ul>
+    {% endfor %}
 </body>
 </html>
